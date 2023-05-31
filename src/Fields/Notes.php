@@ -24,7 +24,7 @@ class Notes extends Field implements RelatableField {
     {
         parent::__construct($name, $attribute);
 
-        $resource = Note::class;
+        $resource = config('nova-resource-notes.resource', Note::class);
 
         $this->resourceClass = $resource;
         $this->resourceName = $resource::uriKey();

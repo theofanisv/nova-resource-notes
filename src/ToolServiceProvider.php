@@ -31,6 +31,10 @@ class ToolServiceProvider extends ServiceProvider
         Nova::serving(function (ServingNova $event) {
             Nova::script('nova-eloquent-notes-field', __DIR__.'/../dist/js/field.js');
         });
+
+        $this->publishes([
+            __DIR__.'/../config/nova-resource-notes.php' => config_path('nova-resource-notes.php'),
+        ], 'config');
     }
 
     /**
