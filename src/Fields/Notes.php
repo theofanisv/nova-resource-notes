@@ -40,4 +40,24 @@ class Notes extends Field {
         ], $this->meta);
     }
 
+    /**
+     * Get the relationship name.
+     *
+     * @return string
+     */
+    public function relationshipName()
+    {
+
+    }
+
+    /**
+     * Get the relationship type.
+     *
+     * @return string
+     */
+    public function relationshipType()
+    {
+        
+    }
+
 }
